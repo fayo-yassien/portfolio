@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Lobster+Two:wght@400;700&family=Mulish:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+header {
+    font-family: 'Lobster Two', cursive;
+    background-color:rgba(0, 0, 0, 0.232);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 130px 10px 130px;
+}
+/*.logo {
+    text-decoration: none;
+    color:#AA3F63;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+}*/
+.logo {
+    height: 45px;
+}
+.nav-bar a {
+    color: #EDC5BE;
+    text-decoration: none;
+    font-weight:lighter;
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+.nav-bar a:hover{
+    color: #EB8250;
+} 
+section {
+    padding: 120px 130px;
+}
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.main , main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /*background: url(images/motionBG.mp4) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
+    position: relative;
+}
+.main h2 {
+    color:#EB8250;
+    font-size: 1.9em;
+    font-weight: 500;
+    font-family: 'Lobster Two', cursive;
+    margin-top: 120px;
+}
+.main h2 span {
+    color: #FFE4B8;
+    font-size: 4em;
+    line-height: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.main-btn {
+    font-family: 'Lobster Two', cursive;
+    text-decoration: none;
+    color: #EDC5BE;
+    background-color: #320F35;
+    font-size: 1.3em;
+    font-weight:600;
+    display: inline-block;
+    padding: 0.5rem 1.5875rem; 
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: 0.7s ease;
+    margin-left: 1rem;
+}
+.main-btn:hover{
+    transform: scale(1.1);
+    background-color: #4e1d53;
+}
+.social-icons {
+    margin-left: 20px;
+    display: flex;
+    margin-left: 3rem;
+}
+.social-icons a{
+    display: block;
+    color: #EB8250;
+    font-size: 2.5rem;
+    padding-right: 30px;
+    transition: 0.7s ease;
+}
+.social-icons a:hover{
+    transform: scale(1.1);
+    color: #e06329;
+}
+
+/* ------------------- Thank U Page -----------------*/
+
+.popup {
+    width: 600px;
+    height: 450px;
+    background-color:#edc5bee0;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    text-align: center;
+    padding: 0 30px 30p;
+    border: #AA3F63 solid 5px;
+}
+.popup div {
+    border-radius: 50%;
+    font-size: 10rem;
+    margin-top: -50px;
+}
+.popup h2 {
+    font-size: 4.5rem;
+    font-family: 'Lobster Two', cursive;
+    color: #AA3F63;
+}
+.back {
+    display: block;
+    text-decoration: none;
+    background-color: #AA3F63;
+    width: fit-content;
+    margin: auto;
+    color: #FFE4B8;
+    padding: 0.3rem 1.5rem;
+    border-radius: 10px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+    margin-top: 2rem;
+}
+.back:hover{
+    transform: scale(1.1);
+    background-color:#EB8250;
+}
+.m{
+    font-family: 'Laila', sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* --------------------- About Page -------------------*/
+
+.aboutMe {
+    background:#EDC5BE;
+    width: 1100px;
+    height: 542px;
+    margin: auto;
+    margin-top: 8.7rem;
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+.aboutTitle {
+   font-family: 'Lobster Two', cursive;
+   background: linear-gradient(180deg, rgba(70,4,75,1) 0%, rgba(235,130,80,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    font-size: 6rem;
+    margin-left: 0.4rem;
+    margin-top: 2rem;
+}
+.intro {
+    font-family: 'Laila', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 1.9rem;
+    padding-top: 1.5rem;
+}
+.fimg {
+    width: 350px;
+    height: 542px;
+}
+.about2 {
+    margin-left: 2rem;
+    width: 60%;
+    padding: 2rem;
+}
+
+/* --------------------- Projects Page -------------------*/
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cards {
+    padding: 100px 50px;
+    position: relative;
+    margin: auto;
+}
+.card {
+    background-color: #EDC5BE;
+    width: 21em;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.197);
+    border-radius: 10px;
+    padding: 15px;
+    margin:15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.info {
+    text-align: center;
+    padding-top: 1rem;
+}
+.info h3 {
+    color: #AA3F63;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+#f-logo {
+    width: 120px;
+}
+#contact {
+    background-color: #320F35;
+    padding: 90px 150px;
+}
+.contact-title {
+    color: #FFE4B8;
+}
+.contact .icon{
+    font-size: 4.5em;
+}
+.cards .content .card .info h3{
+    font-family: 'Laila', sans-serif;
+    font-size: 1.2em;
+    color: #AA3F63;
+}
+.cards .content .card .info p {
+    font-family: 'Laila', sans-serif;
+    font-weight: 500;
+}
+.g {
+    height: 300px;
+    margin: auto;
+}
+.content a {
+    text-decoration: none;
+}
+.pg {
+    height: 550px;
+    margin-bottom: 3rem;
+}
+.works h1 {
+    font-family: 'Laila', sans-serif;
+color: #320F35;
+background-color: #EDC5BE;
+border-radius: 20px;
+width: fit-content;
+padding: 0.8rem 4rem;
+text-align: center;
+margin: auto;
+margin-top: 3rem;
+font-size: 2rem;
+}
+.works {
+    display: block;
+    padding-top: 4rem;
+}
+.pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 3rem;
+    justify-items: center;
+    margin:1rem 2rem;
+}
+.carousel {
+    margin: auto;
+}
+.carousel-indicators{
+    margin: auto;
+    margin-top: 1rem;
+    bottom: -50;    
+}
+.pages2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3rem;
+    justify-items: center;
+    margin:1rem 2rem;
+}
+.pg2 {
+    height: 400px;
+    margin-bottom: 3rem;
+}
+.ramsey {
+    padding-top: 0.1rem;
+}
+.cardR {
+    padding-bottom: 0.4rem;
+}
+.pg3 {
+    height: 500px;
+    margin-bottom: 3rem;
+}
+.pages3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 3rem;
+    justify-items: center;
+    margin:auto;
+}
+.pg0 {
+    height: 900px;
+    margin-bottom: 3rem;
+}
+.pgp {
+    height: 800px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.pg4 {
+    height: 800px;
+    margin-bottom: 3rem;
+}
+.pg5 {
+    height: 700px;
+    margin-bottom: 3rem;
+}
+.pg6 {
+    height: 1000px;
+    margin-bottom: 3rem;
+}
+.pg44 {
+    height: 700px;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    #myVideo {
+    display: none;
+    }
+    body {
+        background-image: url(../images/smallBG.jpg);
+        background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+    .cards {
+        padding: 0;
+        margin-top: 10rem;
+    }
+header {
+    background-color: #aa3f63;
+    flex-direction: column;
+    padding:0;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.311);
+
+}
+.logo {
+    height: 25px;
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+}
+.nav-bar a {
+    font-size: 1.5em;
+    padding: 0.8rem 2rem;
+    display: inline-block;
+}
+.last {
+    margin-bottom: 3rem;
+}
+.aboutMe {
+    background:#EDC5BE;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction:column-reverse;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+}
+.aboutTitle {
+     font-size: 5rem;
+     margin: auto;
+     margin-top: 1rem;
+     text-align: center;
+ }
+ .intro {
+     font-size: 1.1rem;
+     padding-left: 1rem;
+     padding-top: 1rem;
+ }
+ .fimg {
+    width: 320px;
+    height: 496px;
+}
+.about2 {
+    margin: auto;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+.main h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 100px;
+    text-align: center;
+}
+.main h2 span {
+    font-size: 4rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.main-btn {
+    font-size: 1em;
+    padding: 0.5rem 1.5875rem; 
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-left: 1rem;
+}
+.main{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+.main-btn {
+       margin:auto;
+       display: block;
+       width: fit-content;
+}
+.social-icons a{
+    font-size: 2rem;
+    padding-right: auto;
+    transition: 0.7s ease;
+    margin: auto;
+    padding-right: 0%;
+}
+.social-icons {
+    margin: auto;
+    width: fit-content;
+}
+.social-icons .link1{
+    padding-right: 0.5rem;
+}
+.social-icons .link2{
+    padding-left: 0.5rem;
+}
+.i1 .fa-brands{
+    display: block;
+    padding: 0;
+    padding-top: 1rem;
+}
+.works h1 {
+    margin-top: 7rem;
+font-size: 1.8rem;
+padding: 0.8rem 2.5rem;
+}
+.pages {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin:0;
+}
+.pg {
+    height: 450px;
+    margin-bottom: 3rem;
+}
+.works .pages2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 0;
+    margin:2rem;
+}
+.pg2 {
+    height: 250px;
+    margin-bottom: 1.8rem;
+}
+.pg3 {
+    height: 200px;
+    margin-bottom: 3rem;
+}
+.pages3 {
+    padding-top: 3rem;
+}
+.works h1 {
+    font-size: 1.3rem;
+}
+.pg0 {
+    height: 500px;
+}
+.pg00 {
+    height: 300px;
+}
+.pgp {
+    height: 290px;
+}
+.pg4 {
+    height: 400px;
+}
+img.pg44 {
+    height: 270px;
+}
+.pg5 {
+    height: 250px;
+}
+.pg6 {
+    height: 600px;
+}
+.popup {
+    margin-top: 3rem;
+    width: 350px;
+    height: 470px;
+    padding: 0 30px 30p;
+}
+.popup div {
+    font-size: 8rem;
+    margin-top: -40px;
+}
+.popup h2 {
+    font-size: 4rem;
+    width: 70%;
+    margin: auto;
+}
+.m{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: auto;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+    .aboutTitle {
+        font-size: 3.5rem;
+    }
+    .main h2 span {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 40px;
+    }
+    .pg {
+        height: 270px;
+        margin-bottom: 3rem;
+    }
+    .works h1 {
+        margin-top: 5rem;
+    font-size: 1.2rem;
+    }
+    .pg2 {
+        height: 160px;
+        margin-bottom: 1.8rem;
+    }
+    .card {
+        width: 15em;
+    }
+    .g {
+        height: 210px;
+    }
+    .works h1 {
+        font-size: 1rem;
+    }
+    .pg3 {
+        height: 150px;
+        margin-bottom: 3rem;
+    }
+    .pg0 {
+        height: 350px;
+    }
+    .pg00 {
+        height: 200px;
+    }
+    .pgp {
+        height: 350px;
+    }
+    .pg4 {
+        height: 250px;
+    }
+    img.pg44 {
+        height: 180px;
+    }
+    .pg5 {
+        height: 180px;
+    }
+    .pg6 {
+        height: 350px;
+    }
+    .popup {
+        margin-top: 2rem;
+        width: 220px;
+        height: 300px;
+        padding: 0 30px 30p;
+    }
+    .popup div {
+        font-size: 5rem;
+        margin-top: -30px;
+    }
+    .popup h2 {
+        font-size: 2.7rem;
+        width: 70%;
+        margin: auto;
+    }
+    .m{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        width: 70%;
+        margin: auto;
+    }
+    .back {
+        padding: 0.3rem 1.3rem;
+        border-radius: 10px;
+        font-family: 'Lobster Two', cursive;
+        font-size: 1rem;
+        transition: 0.3s ease;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .logo {
+        height: 20px;
+        padding-bottom: 2.5rem;
+        padding-top: 1rem;
+    }
+    .nav-bar a {
+        font-size: 1em;
+        padding: 0.8rem 1rem;
+        display: inline-block;
+    }
+    .fimg {
+        width: 200px;
+        height: 310px;
+    }
+    .intro {
+        font-size: 0.7rem;
+        padding-left: 0.3rem;
+        padding-top: 0.3rem;
+    }
+}
